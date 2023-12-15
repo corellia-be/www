@@ -1,0 +1,30 @@
+.body-project {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(
+      180deg,
+      #270436 0%,
+      rgb(115, 16, 122) 25%,
+      rgb(79, 6, 84) 45%,
+      #400e47 100%
+    );
+  }
+
+.title-project{
+    font-size: 3rem;
+    width: fit-content;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    font-family: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    
+}
+.test-4{
+    border:1px solid red;
+}
+.title-projet{
+    margin-bottom:10rem !important;
+}
+.w-fix-logo{
+    width:10rem;
+}
