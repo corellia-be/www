@@ -1,0 +1,69 @@
+
+.list-devops > div,
+i {
+  color: white;
+  //margin-right:3rem;
+}
+.list-devops {
+  //  width:fit-content;
+  gap: 15px;
+}
+
+.list-devops > p::first-letter {
+  color: #d53895;
+  font-weight: 600;
+  font-size: larger;
+}
+.img-expertise-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.body-text-devops p {
+  text-align: justify;
+}
+
+.test-flex {
+  display: flex;
+  justify-content: end !important;
+  text-align: end;
+  width: 70rem;
+}
+.skill-list > span {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.skill-list > i {
+  color: #00cacc;
+}
+.agile-container {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-devops {
+    display: block !important;
+    margin: 0px;
+  }
+  .body-text-devops > p {
+    width: 100% !important;
+  }
+  .container-expertise {
+    margin: 0px !important;
+    display: block !important;
+  }
+  .bi {
+    // display: none;
+  }
+  .list-devops {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .agile-mobile {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
