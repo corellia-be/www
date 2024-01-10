@@ -19,37 +19,43 @@
 
     <body class="body-factory">
 
-        <header class="mb-5">
+        <header>
             <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <img id="btn-back-home" class="btn-logo" src="/assets/logos/logo-picto5.svg" alt="Logo">
-                </div>
-                <div>
-                    <input id="toggle" type="checkbox"></input>
-
-                    <label for="toggle" class="hamburger">
-                        <div class="top-bun"></div>
-                        <div class="meat"></div>
-                        <div class="bottom-bun"></div>
-                    </label>
-
-                    <div class="d-flex align-items-center justify-content-center nav">
-                        <div class="nav-wrapper">
-                            <nav>
-                                <a href="/">ACCUEIL</a><br>
-                                <a href="factory.html">LA SOCIÉTÉ</a><br>
-                                <a href="expertise.html"">EXPERTISE</a><br>
-                                <a href="contact.html">CONTACT</a>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <div>
+                  <img id="btn-back-home" class="btn-logo" src="/assets/logos/logo-picto5.svg"
+                       alt="Logo corellia">
+                       <div class="link-nav">
+                        <a href="/">Accueil</a> >
+                        <a class="text-pink" href="/pages/expertise.html">Notre expertise</a>
+                      </div>
+              </div>
+              <div id="navbar">
+                  <input id="toggle" type="checkbox"></input>
+                  <label for="toggle" class="hamburger">
+                      <div class="top-bun"></div>
+                      <div class="meat"></div>
+                      <div class="bottom-bun"></div>
+                  </label>
+                  <div class=" d-flex align-items-center  nav">
+                      <img class="img-logo-navbar" src="/assets/logos/logo-picto5.svg" alt="logo">
+                      <div class="nav-wrapper">
+                          <nav class="d-flex ">
+                              <a  href="/index.html">Accueil</a><br>
+                              <a class="text-pink" href="expertise.html">Notre expertise</a><br>
+                              <a href="project.html">Nos projets</a><br>
+                              <a  href="factory.html">Software factory</a><br>
+                              <a  href="contact.html">Contact</a>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </header>
+        
         <!-- <div class=" fix-margin-factory-title margin-top mobile-factory mx-5 w-75">
             <h1 class="font-title text-pink">Notre expertise</h1>
         </div> -->
-        <h2 id="expertise" class="text-pink text-center expertise-title mb-5">Notre expertise</h2>
+        <h2 id="expertise" class="text-pink text-center expertise-title mb-5 mt-5">Notre expertise</h2>
 
 
 
@@ -300,89 +306,76 @@
         <footer>
             <div>
                 <img class="transition-fix-border" src="../assets/décos/Asset 11.svg" alt="">
-                <footer>
-
-                    <div class="footer-style  row ">
-
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">Expertise</h3>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">DevOps</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Développment agile</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Stratégie et support technique</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Conception</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Coaching en équipe</a>
-                                </li>
-                            </ul>
+                <div class="ms-3 footer-style row ">
+                    <div class="col-lg-4 col-11">
+                        <div class="mobile-footer">
+                            <img class="footer-logo" src="../assets/logos/logo-picto6.svg" alt="">
+                            <div class="ms-3 mt-3">
+                                <span class="title-map-footer">
+                                    <img class="map-icon" src="../assets/logos/map.png" alt=""> Belgique</span>
+                                <div class="address">MIC - Meet Innovate Create</div>
+                                <div class="mb-2 address">Av. des Bassins 64/1er ét., Mons</div>
+                                <span class=" title-map-footer"><img class="map-icon" src="../assets/logos/map.png"
+                                         alt="">
+                                    Madagascar</span>
+                                <div class="address">LOT VV 115, Manakambahiny</div>
+                            </div>
                         </div>
-
-
-
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">Notre société</h3>
-                                </li>
-
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Nos clients</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Nos projets</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Notre software factory</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">A propos</h3>
-                                </li>
-
-
-                                <li>
-                                    <a class="text-pink" href=./pages/construct.html">Corellia</a>
-
-                                </li>
-
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Jobs</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/contact.html">Contact</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
                     </div>
-                    <div>
-                        <img class="" src="../assets/background/bg-end-age.svg" alt="">
+                    <div class="col-lg-4 col-11">
+                        <ul>
+                            <li>
+                                <h3 class="text-purple">Notre société</h3>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/expertise.html">Notre expertise</a>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/project.html">Nos projets</a>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/factory.html">Notre software factory</a>
+                            </li>
+                            <div class="terms mt-5">
+                                <div>
+                                 Copyright &copy; 2024, Corellia
+                                </div> 
+                                <span><a class="me-2 privacy" href="/pages/legales.html">Politique de confidentialité et Mentions légales</a>
+                            
+                             </div>
+                        </ul>
                     </div>
-                    <div class="layout-side"></div>
+                    <div class="col-lg-4 col-11">
+                        <ul>
+                            <li>
+                                <h3 class="text-purple">Nous contacter</h3>
+                            </li>
+    
+                            <li>
+                                <a class="text-pink" href="./pages/contact.html">Contact</a>
+                            </li>
+    
+                            <li class="text-pink  fw-bold"> 
+                               <a class="lkd-text" target="_blank" href="https://www.linkedin.com/company/corelliabe/about/"><img class="me-2" src="../assets/logos/iconmonstr-linkedin-3.svg" alt="">Linkedin</a> 
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+                <div>
+                    <img class="" src="../assets/background/bg-end-age.svg" alt="">
+                </div>
+                <div class="layout-side"></div>
 
-                    <div class="container-btn-to-top">
-                    </div>
+                <div class="container-btn-to-top">
+                </div>
+            </div>
 
-                </footer>
+        </footer>
 
             </div>
 
         </footer>
-        <script async src="../js/script.js  "></script>
+        <script async src="../js/script.js"></script>
         <script src="../Packages/aos-master/dist/aos.js"></script>
         <script>AOS.init();</script>
 

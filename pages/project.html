@@ -19,27 +19,31 @@
 
     <body class="body-project">
 
-        <header class="mb-5">
+        <header>
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <img id="btn-back-home" class="btn-logo" src="/assets/logos/logo-picto5.svg" alt="Logo">
+                    <img id="btn-back-home" class="btn-logo" src="/assets/logos/logo-picto5.svg" alt="Logo corellia">
+                    <div class="link-nav">
+                        <a href="/">Accueil</a> >
+                        <a class="text-pink" href="/pages/project.html">Nos projets</a>
+                    </div>
                 </div>
                 <div>
                     <input id="toggle" type="checkbox"></input>
-
                     <label for="toggle" class="hamburger">
                         <div class="top-bun"></div>
                         <div class="meat"></div>
                         <div class="bottom-bun"></div>
                     </label>
-
-                    <div class="d-flex align-items-center justify-content-center nav">
+                    <div class=" d-flex align-items-center  nav">
+                        <img class="img-logo-navbar" src="/assets/logos/logo-picto5.svg" alt="logo">
                         <div class="nav-wrapper">
-                            <nav>
-                                <a href="/">ACCUEIL</a><br>
-                                <a href="factory.html">LA SOCIÉTÉ</a><br>
-                                <a href="expertise.html"">EXPERTISE</a><br>
-                                <a href=" contact.html">CONTACT</a>
+                            <nav class="d-flex ">
+                                <a href="/index.html">Accueil</a><br>
+                                <a href="expertise.html">Notre expertise</a><br>
+                                <a class="text-pink" href="project.html">Nos projets</a><br>
+                                <a href="factory.html">Software factory</a><br>
+                                <a href="contact.html">Contact</a>
                             </nav>
                         </div>
                     </div>
@@ -48,15 +52,15 @@
         </header>
 
         <div>
-            <h2 id="expertise" class="text-pink text-center expertise-title mb-5">Nos projets</h2>
+            <h2 id="expertise" class="text-pink text-center expertise-title mb-5 mt-5 ">Nos projets</h2>
             <div class="border-blue title-projet  mb-5"></div>
         </div>
         <div class="d-flex flex-column align-items-center">
-            <div class=" d-flex flex-column  w-75 justify-content-around ">
+            <div class="mobile-shopscan-size d-flex flex-column  w-75 justify-content-around ">
 
 
                 <div class="title-project text-pink">
-                  Shopscan
+                    Shopscan
                 </div>
                 <div class="font-title-factory text-white">Digitalisez les flux de communication avec vos clients</div>
                 <div class="d-flex align-items-start justify-content-start list-devops">
@@ -67,24 +71,24 @@
                     <p>Réduction des coûts</p>
                 </div>
 
-                <div class=" d-flex align-items-center justify-content-between">
-                    <p class="w-50 ">Shopscan est une application digitale créée pour faciliter et automatiser la
+                <div class=" d-flex align-items-center justify-content-between flex-wrap ">
+                    <p class="mobile-text-project w-50  ">Shopscan est une application digitale créée pour faciliter et
+                        automatiser la
                         gestion des commandes. Grâce
                         à son interface claire et facile à utiliser, les commandes sont centralisées à un seul endroit
                         et
                         dispatchée dans vos outils de gestion (ERP, Mailing,…).</p>
-                    <div class="w-25 btn-home-mobile container-btn d-flex justify-content-between">
-                        <button aria-label="En savoir plus" class="btn-arrow  px-5 py-3 text-white fw-bold">
-                            <a class="btn-text" href="https://www.shopscan.be/#landing" target="_blank">Shopscan</a>
-                        </button>
-                        <button aria-label="button-home" type="button"
-                                class="d-none d-lg-flex d-sm-flex bt-link fw-bold px-4 py-3 ">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
+
+                    <button aria-label="shopscan" class="btn-arrow  btn-center py-3 text-white fw-bold">
+                        <a class="btn-text-shopscan" href="https://www.shopscan.be/#landing" target="_blank">Shopscan <i
+                               class="bi bi-arrow-right-circle"></i> </a>
+                    </button>
+
+
+
                 </div>
             </div>
-            <img class="w-75" src="../assets/décos/Asset 18.svg" alt="">
+            <!-- <img class="w-75" src="../assets/décos/Asset 18.svg" alt=""> -->
             <div class="img-expertise-list  ">
                 <img class="" src="../assets/décos/Asset 13.svg" alt="">
             </div>
@@ -101,8 +105,8 @@
                     <p>Event Center</p>
                 </div>
 
-                <div class=" d-flex align-items-center justify-content-between">
-                    <div class="w-50">
+                <div class=" d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="mobile-text-project w-50">
                         <p>Partena est venu vers nous pour moderniser son portail utilisateur. L’objectif était de
                             rendre l’environnement client plus efficace et user-friendly. L’entrepreneur a désormais
                             accès en quelques clics à tous les documents relatifs à ses cotisations sociales.
@@ -118,24 +122,19 @@
                         </div>
                     </div>
 
-                    <div class="w-25 btn-home-mobile container-btn d-flex justify-content-between">
-                        <button aria-label="En savoir plus" class="btn-arrow  px-5 py-3 text-white fw-bold">
-                            <a class="btn-text" href="https://www.shopscan.be/#landing" target="_blank">Fastlane</a>
-                        </button>
-                        <button aria-label="button-home" type="button"
-                                class="d-none d-lg-flex d-sm-flex bt-link fw-bold px-4 py-3 ">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
+                    <button aria-label="shopscan" class="btn-arrow  btn-center py-3 text-white fw-bold">
+                        <a class="btn-text-shopscan" href="https://starter.partena-professional.be/fr/"
+                           target="_blank">Fastlane <i class="bi bi-arrow-right-circle"></i> </a>
+                    </button>
                 </div>
             </div>
-            <img class="w-75" src="../assets/décos/Asset 18.svg" alt="">
+            <!-- <img class="w-75" src="../assets/décos/Asset 18.svg" alt=""> -->
             <div class="img-expertise-list  ">
                 <img class="" src="../assets/décos/Asset 14.svg" alt="">
             </div>
 
 
-            <div class=" d-flex flex-column  w-75 justify-content-around ">
+            <div class=" d-flex flex-column w-75 justify-content-around ">
                 <div class="title-project text-pink">Salade2fruits</div>
                 <div class="font-title-factory text-white">Digitalisez les flux de communication avec vos clients</div>
                 <div class="d-flex align-items-start justify-content-start list-devops">
@@ -146,110 +145,89 @@
                     <p>Réduction des coûts</p>
                 </div>
 
-                <div class=" d-flex align-items-center justify-content-between">
-                    <p class="w-50 ">Notre client marseillais Salade2Fruits est un grossiste en produits frais destinés
+                <div class=" d-flex align-items-center justify-content-between flex-wrap ">
+                    <p class="mobile-text-project w-50 ">Notre client marseillais Salade2Fruits est un grossiste en
+                        produits frais destinés
                         aux restaurateurs, magasins et supermarchés. La mission qui nous a été confiée était de
                         moderniser l’ERP. À l’origine basé sur notre SaaS Shopscan qui permet d’automatiser les
                         commandes, nous avons créé un système sur-mesure complet allant des commandes à la livraison des
                         produits.</p>
-                    <div class="w-25 btn-home-mobile container-btn d-flex justify-content-between">
-                        <button aria-label="En savoir plus" class="btn-arrow  px-5 py-3 text-white fw-bold">
-                            <a class="btn-text" href="https://www.shopscan.be/#landing" target="_blank">Salade2fruits</a>
-                        </button>
-                        <button aria-label="button-home" type="button"
-                                class="d-none d-lg-flex d-sm-flex bt-link fw-bold px-4 py-3 ">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
+                    <button aria-label="shopscan" class="btn-arrow  btn-center py-3 text-white fw-bold">
+                        <a class="btn-text-s2f btn-text-shopscan" href="https://www.salade2fruits.eu/contact"
+                           target="_blank">Salade2Fruits <i class="bi bi-arrow-right-circle"></i> </a>
+                    </button>
                 </div>
             </div>
-            <img class="w-75" src="../assets/décos/Asset 18.svg" alt="">
+            <!-- <img class="w-75" src="../assets/décos/Asset 18.svg" alt=""> -->
             <div class="img-expertise-list  ">
                 <img class="" src="../assets/décos/Asset 15.svg" alt="">
             </div>
         </div>
-
         <footer>
             <div>
                 <img class="transition-fix-border" src="../assets/décos/Asset 11.svg" alt="">
-                <footer>
-
-                    <div class="footer-style  row ">
-
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">Expertise</h3>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">DevOps</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Développment agile</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Stratégie et support technique</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Conception</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="#expertise">Coaching en équipe</a>
-                                </li>
-                            </ul>
+                <div class="ms-3 footer-style row ">
+                    <div class="col-lg-4 col-11">
+                        <div class="mobile-footer">
+                            <img class="footer-logo" src="../assets/logos/logo-picto6.svg" alt="">
+                            <div class="ms-3 mt-3">
+                                <span class="title-map-footer">
+                                    <img class="map-icon" src="../assets/logos/map.png" alt=""> Belgique</span>
+                                <div class="address">MIC - Meet Innovate Create</div>
+                                <div class="mb-2 address">Av. des Bassins 64/1er ét., Mons</div>
+                                <span class=" title-map-footer"><img class="map-icon" src="../assets/logos/map.png"
+                                         alt="">
+                                    Madagascar</span>
+                                <div class="address">LOT VV 115, Manakambahiny</div>
+                            </div>
                         </div>
-
-
-
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">Notre société</h3>
-                                </li>
-
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Nos clients</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Nos projets</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Notre software factory</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-11">
-                            <ul>
-                                <li>
-                                    <h3 class="text-purple">A propos</h3>
-                                </li>
-
-
-                                <li>
-                                    <a class="text-pink" href=./pages/construct.html">Corellia</a>
-
-                                </li>
-
-                                <li>
-                                    <a class="text-pink" href="./pages/construct.html">Jobs</a>
-                                </li>
-                                <li>
-                                    <a class="text-pink" href="./pages/contact.html">Contact</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
                     </div>
-                    <div>
-                        <img class="" src="../assets/background/bg-end-age.svg" alt="">
+                    <div class="col-lg-4 col-11">
+                        <ul>
+                            <li>
+                                <h3 class="text-purple">Notre société</h3>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/expertise.html">Notre expertise</a>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/project.html">Nos projets</a>
+                            </li>
+                            <li>
+                                <a class="text-pink" href="./pages/factory.html">Notre software factory</a>
+                            </li>
+                            <div class="terms mt-5">
+                                <div>
+                                 Copyright &copy; 2024, Corellia
+                                </div> 
+                                <span><a class="me-2 privacy" href="/pages/legales.html">Politique de confidentialité et Mentions légales</a>
+                            
+                             </div>
+                        </ul>
                     </div>
-                    <div class="layout-side"></div>
+                    <div class="col-lg-4 col-11">
+                        <ul>
+                            <li>
+                                <h3 class="text-purple">Nous contacter</h3>
+                            </li>
+    
+                            <li>
+                                <a class="text-pink" href="./pages/contact.html">Contact</a>
+                            </li>
+    
+                            <li class="text-pink  fw-bold"> 
+                               <a class="lkd-text" target="_blank" href="https://www.linkedin.com/company/corelliabe/about/"><img class="me-2" src="../assets/logos/iconmonstr-linkedin-3.svg" alt="">Linkedin</a> 
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+                <div>
+                    <img class="" src="../assets/background/bg-end-age.svg" alt="">
+                </div>
+                <div class="layout-side"></div>
 
-                    <div class="container-btn-to-top">
-                    </div>
-
-                </footer>
+                <div class="container-btn-to-top">
+                </div>
             </div>
 
         </footer>
