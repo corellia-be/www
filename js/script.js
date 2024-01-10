@@ -10,10 +10,13 @@ let planetHomeSide = document.getElementById('planet-home');
 let planetHome = document.getElementById('bg-stars');
 let planetBgHome = document.getElementById('planet-bg');
 let containerHome = document.getElementById('container-home')
+let btnToTop = document.getElementById('btn-to-top');
 console.log(cloud);
 
 window.addEventListener('scroll', function () {
     let value = window.scrollY;
+    let windowHeight = window.innerHeight;
+    
     
     
     cloud.style.left = value * 0.05 + 'px';
@@ -52,7 +55,12 @@ if (window.innerWidth > 720 && window.innerWidth < 1024) {
    // containerHome.style.opacity = limitedOpacity;
    
 }
-
+if (value > windowHeight / 2) {
+    btnToTop.style.display = "block";
+} else if(value <500) {
+    btnToTop.style.display = "none";
+}
+console.log(value)
 });
 
 const btnBackHome = document.getElementById('btn-back-home')
@@ -61,7 +69,9 @@ btnBackHome.addEventListener('click',()=>{
 window.location.href = '/';
 })
 
-  
+
+
+
 
 
   

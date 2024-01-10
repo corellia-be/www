@@ -2,13 +2,13 @@
   ul {
     list-style: none;
     text-align: center;
-    a {
+    a:not(.privacy) {
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
     }
 
-    a {
+    a:not(.privacy) {
       background: linear-gradient(to right, white, white),
         linear-gradient(
           to right,
@@ -33,4 +33,41 @@
 
 h3 {
   margin-bottom: 2rem;
+}
+.footer-logo{
+  width:13rem;
+}
+.title-map-footer{
+ color: rgb(47, 22, 74);
+ font-weight: 500;
+ font-size:1rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-transform: uppercase;
+
+ letter-spacing: 0.2px;
+}
+
+.address{
+  font-style: italic;
+}
+.map-icon{
+  width:16px;
+}
+.lkd-text{
+  color:#d53895;
+}
+.terms{
+ margin:0 auto;
+ text-align: center;
+
+ // margin-top: 20rem;
+}
+.privacy{
+  color:rgb(97, 97, 97);
+  font-size:x-small;
+  &:hover{
+    color:black
+  }
+  
+
 }

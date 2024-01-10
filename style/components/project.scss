@@ -9,6 +9,7 @@
       rgb(79, 6, 84) 45%,
       #400e47 100%
     );
+  //  padding-top:5dvh;
   }
 
 .title-project{
@@ -23,8 +24,47 @@
     border:1px solid red;
 }
 .title-projet{
-    margin-bottom:10rem !important;
+    margin-bottom:5rem !important;
 }
 .w-fix-logo{
     width:10rem;
 }
+.btn-text-shopscan{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+   border:1px solid #00cacc;
+   padding:1.5rem;
+   border-radius: 30px;
+    
+    &:hover{
+      text-decoration: underline;  
+      color: #00cacc;
+      i{
+        color: #00cacc;  
+    }
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+   .title-project{
+    text-align: center !important;
+    font-size: 2rem;
+    margin: 0 auto !important;
+    margin-bottom: 1rem !important;
+   
+   }
+   .mobile-text-project{
+    width:100% !important;
+   
+   }
+   .btn-text-s2f{
+    font-size: 0.8rem;
+   }
+   .btn-center{
+    margin: 0 auto !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+   }
+  }

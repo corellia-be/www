@@ -38,3 +38,24 @@ html {
 main {
   max-width: 2000px;
 }
+
+.container-btn-to-top{
+  width:fit-content;
+display: none;
+  padding-top:0.6rem;
+  padding-bottom:0.3rem;
+  background-color: #360749;
+  color:white;
+  overflow: hidden;
+  //height: fit-content;
+  position: fixed;
+  z-index: 9999999;
+  bottom:0%;
+  left:50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  a{
+    text-decoration: none;
+  }
+  
+}

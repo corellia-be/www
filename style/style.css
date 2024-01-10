@@ -15,14 +15,28 @@
   display: none;
 }
 
+.link-nav, .link-nav a {
+  color: #00cacc;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.link-nav a:hover, .link-nav a a:hover {
+  text-decoration: underline;
+}
+
+.link-nav {
+  margin-left: 10rem;
+}
+
 .hamburger {
-  position: absolute;
-  top: 5em;
-  right: 5%;
-  margin-left: -2em;
-  margin-top: -45px;
-  width: 1em;
-  height: 45px;
+  position: fixed;
+  margin-top: 1rem;
+  top: 0;
+  right: 0;
+  margin-right: 3em;
   z-index: 99999999999999;
 }
 
@@ -36,11 +50,17 @@
   transition: all 0.3s ease-in-out;
 }
 
+.img-logo-navbar {
+  width: 9rem;
+  display: flex;
+  margin-left: 2rem;
+}
+
 .nav {
   position: fixed;
   width: 100%;
   overflow-y: hidden;
-  background: linear-gradient(153deg, #4e0977 0%, rgb(92, 25, 96) 45%, rgb(67, 15, 74) 77%, rgb(49, 8, 103) 100%);
+  background-color: #270436;
   opacity: 0.9;
   top: -100%;
   left: 0;
@@ -48,17 +68,22 @@
   bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  transform: scale(0);
+  height: 10dvh;
   z-index: 999999999;
 }
 
 .nav-wrapper {
   position: relative;
-  white-space: nowrap;
+  margin: 0 auto;
 }
 
 nav {
-  margin-left: 25%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 nav a {
@@ -67,9 +92,8 @@ nav a {
   position: relative;
   text-decoration: none;
   color: #00cacc;
-  font-size: 2em;
+  font-size: 1em;
   display: inline-block;
-  margin-top: 1.25em;
   transition: color 0.2s ease-in-out;
   letter-spacing: 1px;
 }
@@ -96,6 +120,10 @@ nav a:hover:before {
   height: 100%;
 }
 
+nav a:hover:after {
+  height: 100%;
+}
+
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 25px;
@@ -114,18 +142,39 @@ nav a:hover:before {
 #toggle:checked + .hamburger + .nav {
   top: 0;
   transform: scale(1);
+  height: 10dvh;
+  overflow-y: hidden;
 }
 
 @media only screen and (max-width: 600px) {
   .hamburger {
-    right: 10%;
-  }
-  .hamburger div {
-    width: 2em;
-    height: 4px;
+    right: 0;
   }
   .btn-logo {
     width: 200px;
+  }
+  .link-nav {
+    display: none;
+  }
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+    height: 100dvh;
+    overflow-y: hidden;
+  }
+  .img-logo-navbar {
+    display: none;
+  }
+  .nav {
+    opacity: 1;
+  }
+  .nav a {
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+  }
+  nav {
+    gap: 0.8rem !important;
   }
 }
 .bar-animation {
@@ -144,7 +193,7 @@ nav a:hover:before {
 }
 
 .img-expertise {
-  width: 220px;
+  width: 150px;
   margin-top: 4rem;
   transition: translate 420ms ease-in-out;
 }
@@ -171,6 +220,7 @@ nav a:hover:before {
   overflow-y: hidden;
   overflow-x: hidden;
   background: linear-gradient(153deg, #17032d 0%, rgb(92, 25, 96) 45%, rgb(67, 15, 74) 77%, rgb(42, 3, 50) 100%, #270436 100%);
+  padding-top: 5.5dvh;
 }
 
 body {
@@ -394,6 +444,42 @@ body {
   background-position: 0 0;
 }
 
+.container-legacy {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 30rem;
+  margin: 0 auto;
+  width: 50%;
+  text-align: justify;
+}
+.container-legacy li {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.body-legacy {
+  height: fit-content;
+  background: linear-gradient(153deg, #5a0e6c 0%, rgb(114, 28, 118) 45%, rgb(67, 15, 74) 77%, rgb(42, 3, 50) 100%);
+}
+
+.legacy-title {
+  text-transform: uppercase;
+  color: #d53895;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-legacy {
+    width: 90% !important;
+    text-align: center !important;
+  }
+  .legacy-mobile {
+    display: inline-block !important;
+  }
+}
 .container-pres {
   width: 50%;
   margin: 7rem;
@@ -445,16 +531,6 @@ body {
   color: #d53895;
   text-decoration: none;
 }
-.list-client a {
-  background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #00cacc, #0089cc, #1f26bd);
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  line-height: 3rem;
-  padding-bottom: 1rem;
-  letter-spacing: 0.1rem;
-}
 .list-client a:hover {
   background-size: 0 3px, 100% 3px;
   color: #00cacc;
@@ -464,31 +540,6 @@ body {
   list-style: none;
   text-transform: uppercase;
   font-weight: 600;
-  background: #530d5a;
-  padding: 3rem;
-}
-.list-techno a {
-  color: #d53895;
-  text-decoration: none;
-}
-.list-techno a {
-  background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #00cacc, #0089cc, #1f26bd);
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  line-height: 3rem;
-  padding-bottom: 1rem;
-  letter-spacing: 0.1rem;
-}
-.list-techno a:hover {
-  background-size: 0 3px, 100% 3px;
-  color: #00cacc;
-}
-
-.border-client {
-  background: linear-gradient(to right, #00cacc, #0089cc, #1f26bd);
-  padding: 2px;
 }
 
 .container-btn-pres {
@@ -505,12 +556,12 @@ body {
   list-style: none;
   text-align: center;
 }
-.footer-style ul a {
+.footer-style ul a:not(.privacy) {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
 }
-.footer-style ul a {
+.footer-style ul a:not(.privacy) {
   background: linear-gradient(to right, white, white), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
@@ -526,6 +577,44 @@ body {
 
 h3 {
   margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 13rem;
+}
+
+.title-map-footer {
+  color: rgb(47, 22, 74);
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.address {
+  font-style: italic;
+}
+
+.map-icon {
+  width: 16px;
+}
+
+.lkd-text {
+  color: #d53895;
+}
+
+.terms {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.privacy {
+  color: rgb(97, 97, 97);
+  font-size: x-small;
+}
+.privacy:hover {
+  color: black;
 }
 
 .body-contact {
@@ -640,6 +729,9 @@ textarea {
   }
   .test-contact {
     background: none;
+  }
+  .label-contact {
+    text-align: center;
   }
 }
 section {
@@ -986,6 +1078,10 @@ i {
   text-align: justify;
 }
 
+.link-to-expertise {
+  text-decoration: none;
+}
+
 .test-flex {
   display: flex;
   justify-content: end !important;
@@ -1051,17 +1147,55 @@ i {
 }
 
 .title-projet {
-  margin-bottom: 10rem !important;
+  margin-bottom: 5rem !important;
 }
 
 .w-fix-logo {
   width: 10rem;
 }
 
+.btn-text-shopscan {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #00cacc;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+.btn-text-shopscan:hover {
+  text-decoration: underline;
+  color: #00cacc;
+}
+.btn-text-shopscan:hover i {
+  color: #00cacc;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-project {
+    text-align: center !important;
+    font-size: 2rem;
+    margin: 0 auto !important;
+    margin-bottom: 1rem !important;
+  }
+  .mobile-text-project {
+    width: 100% !important;
+  }
+  .btn-text-s2f {
+    font-size: 0.8rem;
+  }
+  .btn-center {
+    margin: 0 auto !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   .btn-home-mobile {
     width: 100%;
     justify-content: center !important;
+  }
+  .mobile-btn-home {
+    width: 100%;
   }
   .container-pres {
     width: 100%;
@@ -1120,6 +1254,11 @@ i {
     width: 130px;
   }
 }
+.mobile-footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .front-bg-cloud {
     bottom: -2rem;
@@ -1192,6 +1331,25 @@ html .font-arial {
 
 main {
   max-width: 2000px;
+}
+
+.container-btn-to-top {
+  width: fit-content;
+  display: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.3rem;
+  background-color: #360749;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0%;
+  left: 50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container-btn-to-top a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
